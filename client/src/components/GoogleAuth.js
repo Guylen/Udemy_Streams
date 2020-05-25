@@ -1,6 +1,6 @@
 //reference for Google how to. all state level stuff is in the GoogleAuth Component.
 
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { signIn, signOut } from "../actions";
 
