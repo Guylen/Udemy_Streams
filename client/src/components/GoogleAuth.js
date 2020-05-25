@@ -4,7 +4,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { signIn, signOut } from "../actions";
 
-class GoogleAuth extends Component {
+class GoogleAuth extends React.Component {
 
   componentDidMount() {
     window.gapi.load("client:auth2", () => {
@@ -32,7 +32,7 @@ class GoogleAuth extends Component {
   };
 
   clickSignIn = () => {
-    this.auth.signIn();
+    this.auth.signIn(); 
   };
   clickSignOut = () => {
     this.auth.signOut();
